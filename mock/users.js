@@ -1,4 +1,4 @@
-import config from './config.js';
+//import config from './config.js';
 
 // !(function(n){
 // 	console.log(n)
@@ -37,23 +37,23 @@ import config from './config.js';
 	// 	connection.end()
 	// }
 // })(config)
-var a = true;
-var b = function(){
-	console.log(11)
-};
-var c = function(){
-	console.log(222)
-}
-a ? b() : c()
+// var a = true;
+// var b = function(){
+// 	console.log(11)
+// };
+// var c = function(){
+// 	console.log(222)
+// }
+// a ? b() : c()
 
 export default {
-  //'/api/users': ['a', 'b'], http://localhost:8000/api/users
-  // 支持值为 Object 和 Array
-  'GET /api/users': { users: [1, 2] },
-	
-  // GET POST 可省略
-  '/api/users/1': { id: 1 },
-	
+	//'/api/users': ['a', 'b'], http://localhost:8000/api/users
+	// 支持值为 Object 和 Array
+	'GET /api/users': { users: [1, 2] },
+	  
+	// GET POST 可省略
+	'/api/users/1': { id: 1 },
+
 	'/history': (req, res) => {
 		setTimeout(() => {
 			res.send('Ok');
@@ -62,5 +62,5 @@ export default {
 	},
 
   // 支持自定义函数，API 参考 express@4
-  'POST /api/users/create': (req, res) => { res.end('OK'); },
+  'POST /api/users/create': (req, res) => { res.end('OK'); }
 }

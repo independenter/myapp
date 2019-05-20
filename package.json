@@ -8,7 +8,9 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "icestore": "^0.1.2",
     "mysql": "^2.17.1",
+    "object.map": "^1.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },

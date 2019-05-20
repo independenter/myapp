@@ -12,6 +12,7 @@
 
 # misc
 .DS_Store
+.eslintrc
 
 # umi
 .umi

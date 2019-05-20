@@ -1,6 +1,5 @@
 import styles from './users.css';
 import global from '../../global'
-//import router from 'umi/router';
 
 export default function() {
   //var history = require('../../../assets/mysql/history')

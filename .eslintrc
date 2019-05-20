@@ -1,3 +1,18 @@
 {
-  "extends": "eslint-config-umi"
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": "eslint-config-airbnb",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "mocha": true
+  },
+  "plugins": ["react", "babel"],
+  "rules": {
 }
