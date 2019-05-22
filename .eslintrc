@@ -14,5 +14,5 @@
     "mocha": true
   },
   "plugins": ["react", "babel"],
-  "rules": {
+  "rules": {}
 }

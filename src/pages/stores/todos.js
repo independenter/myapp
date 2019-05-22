@@ -1,7 +1,7 @@
 export default {
   dataSource: [],
   async refresh() {
-		this.dataSource = await (await fetch('http://localhost:8000/api/users')).json();
+		this.dataSource = await (await fetch('http://localhost:8000/api/datas')).json();
 		// fetch('http://localhost:8000/api/users').then(resp=>{
 		// 	if(resp.status === 200) return resp.json(); 
 		// }).then(json => {

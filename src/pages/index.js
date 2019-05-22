@@ -20,14 +20,31 @@ function Todo() {
     todos.refresh();
   }, []);
 	
+	//dataSource.map(n=>{console.log(n)})
+      //<ul>
+			// {
+			// 	dataSource.map(function(item,i){
+			// 		return (
+			// 			<li>
+			// 				 <label>{item}</label>
+			// 				 <button>delete</button>
+			// 		 </li>
+			// 		);
+			// 	})
+			// }
+			// </ul>
   return (
     <div>
       <h2>Todo</h2>
-      <ul>
-        {dataSource.map(({ name }) => (
-          <li>{name}</li>
-        ))}
-      </ul>
+			<ul>
+			{
+				dataSource.map((item,i)=>{
+					return (
+						<li>{item}</li>
+					);
+				})
+			}
+			</ul>
     </div>
   );
 };

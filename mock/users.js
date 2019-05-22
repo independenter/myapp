@@ -50,6 +50,8 @@ export default {
 	//'/api/users': ['a', 'b'], http://localhost:8000/api/users
 	// 支持值为 Object 和 Array
 	'GET /api/users': { users: [1, 2] },
+	
+	'GET /api/datas': ['测试', '测试2'],
 	  
 	// GET POST 可省略
 	'/api/users/1': { id: 1 },
